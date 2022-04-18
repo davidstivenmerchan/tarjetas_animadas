@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Caveat', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --color1:purple;
+    --color2:white;
+}
+.tarjetas{
+    display: flex;
+    width: 130%;
+    padding: 50px;
+}
+.tarjetas .tarjeta:nth-child(1){
+    background:url(img/thor1.jpg);
+    background-size: cover;
+}
+.tarjetas .tarjeta:nth-child(2){
+    background:url(img/iron2.jpg);
+    background-size: cover;
+}
+.tarjetas .tarjeta:nth-child(3){
+    background:url(img/cap2.png);
+    background-size: cover;
+}
+.tarjetas .tarjeta:nth-child(4){
+    background:url(img/ojo2.jpg);
+    background-size: cover;
+}
+.tarjetas .tarjeta:nth-child(5){
+    background:url(img/hulk2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(2) .tarjeta:nth-child(1){
+    background: url(img/black2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(2) .tarjeta:nth-child(2){
+    background: url(img/falcon2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(2) .tarjeta:nth-child(3){
+    background: url(img/sol2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(2) .tarjeta:nth-child(4){
+    background: url(img/pan2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(2) .tarjeta:nth-child(5){
+    background: url(img/vision2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(3) .tarjeta:nth-child(1){
+    background: url(img/quick2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(3) .tarjeta:nth-child(2){
+    background: url(img/wanda2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(3) .tarjeta:nth-child(3){
+    background: url(img/ant2.jpg);  
+    background-size: cover;
+}
+.tarjetas:nth-child(3) .tarjeta:nth-child(4){
+    background: url(img/spi2.jpg);  
+    background-size: cover;
+}
+.tarjetas:nth-child(3) .tarjeta:nth-child(5){
+    background: url(img/maquina2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(4) .tarjeta:nth-child(1){
+    background: url(img/star2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(4) .tarjeta:nth-child(2){
+    background:url(img/rock2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(4) .tarjeta:nth-child(3){
+    background: url(img/groot2.jpg);
+    background-size: cover;
+}
+.tarjetas:nth-child(4) .tarjeta:nth-child(4){
+    background: url(img/drax2.jpg);  
+    background-size: cover;
+}
+.tarjetas:nth-child(4) .tarjeta:nth-child(5){
+    background: url(img/gamora2.jpg);
+    background-size: cover;
+}
+.tarjeta{
+    background: var(--color1);
+    color: var(--color2);
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+    box-shadow: -3px 0 10px black, -4px 0 10px black, -5px 0 10px black;
+}
+.tarjeta a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.tarjeta a span{
+    margin-left: 10px;
+}
+.tarjeta a:hover{
+    color: lightyellow;
+}
+.encabezado{
+    flex:1;
+    
+}
+.tarjeta:hover{
+    margin-right: 80px;
+    transform: rotate(10deg) translate(-15px);
+}
+.title{
+    font-size: 35px;
+}
+.tarjeta[class*="elemento"]{
+    margin-left: -100px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.pie{
+    background: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
